@@ -1,0 +1,2 @@
+# chartmind-studio
+trading studio

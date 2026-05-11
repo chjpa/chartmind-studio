@@ -935,6 +935,44 @@ textarea:disabled {
   opacity: 0.55;
 }
 
+.integration-page {
+  display: grid;
+  gap: 18px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 56px 20px;
+}
+
+.integration-hero,
+.integration-section {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 24px;
+}
+
+.integration-hero h1,
+.integration-section h2 {
+  margin: 0 0 12px;
+  letter-spacing: 0;
+}
+
+.integration-hero h1 {
+  font-size: 34px;
+}
+
+.integration-hero p,
+.integration-section p,
+.integration-section li {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.integration-section ul {
+  margin: 12px 0 0;
+  padding-left: 20px;
+}
+
 .scenario-panel {
   padding: 16px;
 }

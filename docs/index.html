@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ChartMind Studio Integration Overview</title>
+    <meta
+      name="description"
+      content="Public integration overview for ChartMind Studio and TradingView Advanced Charts access review."
+    />
+    <style>
+      :root {
+        color-scheme: dark;
+        --background: #0b0f14;
+        --panel: #121923;
+        --line: #263241;
+        --text: #e8eef6;
+        --muted: #9aa8b8;
+        --accent: #57c7ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--background);
+        color: var(--text);
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      main {
+        display: grid;
+        gap: 18px;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 56px 20px;
+      }
+
+      section {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        padding: 24px;
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 12px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.6;
+      }
+
+      ul {
+        margin: 12px 0 0;
+        padding-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <p class="eyebrow">Public Integration Overview</p>
+        <h1>ChartMind Studio</h1>
+        <p>
+          ChartMind Studio is a public crypto chart analysis workspace being built with a custom market datafeed,
+          multi-exchange OHLCV data, user drawings, deterministic technical analysis, and AI-assisted chart review.
+        </p>
+      </section>
+
+      <section>
+        <h2>TradingView Advanced Charts use case</h2>
+        <p>
+          The application will integrate TradingView Advanced Charts as the charting interface. Market data will be
+          provided by our own datafeed API, not by TradingView market data.
+        </p>
+        <ul>
+          <li>Custom Datafeed API for historical and real-time OHLCV candles.</li>
+          <li>Initial crypto markets include spot and perpetual futures instruments.</li>
+          <li>Supported exchanges are planned through a provider registry, including Binance, Bybit, OKX, Coinbase, and Upbit.</li>
+          <li>User drawings are stored per instrument and interval so different exchanges and market types do not mix.</li>
+          <li>AI analysis uses structured OHLCV, drawing, and deterministic analysis data. It does not analyze chart screenshots.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Availability</h2>
+        <p>
+          This is an early public demo page for review. The production integration will be publicly available and will
+          not include real order execution, broker account connection, or automated trading in the MVP.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
